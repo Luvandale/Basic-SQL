@@ -5,7 +5,6 @@
 -- Total actual cost.
 -- For each location Id from the 'workoderrouting' table for orders in January 2004.
 
-
 SELECT 
     wor.LocationID,
     COUNT(DISTINCT wor.WorkOrderID) AS No_Work_Orders,

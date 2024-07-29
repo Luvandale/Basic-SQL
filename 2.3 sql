@@ -1,0 +1,9 @@
+--2.3 Select all the expensive work Orders (above 300 actual cost) that happened throught January 2004.
+
+SELECT
+WorkOrderID, 
+SUM(ActualCost) AS total_cost
+FROM `tc-da-1.adwentureworks_db.workorderrouting` 
+WHERE ActualStartDate >= '2004-01-01' AND ActualStartDate < '2004-02-01'
+GROUP BY WorkOrderID
+HAVING total_cost > 300 

@@ -1,3 +1,8 @@
+-- 1.2 In 1.1 query you have a product subcategory but see that you could use the category name.
+
+-- Find and add the product category name.
+-- Afterwards order the results by Category name.
+
 SELECT 
 p.ProductID,
 p.Name,
